@@ -34,7 +34,7 @@ n_estimators = 100 # cantidad de arboles
 n_folds = 5 # cantidad de folds
 
 # cargar matrices de correlacion
-with open(r'C:\Users\users\Documents\work\slides\curso_DC\slee_data.pickle', "rb") as input_file:
+with open('../datasets/slee_data.pickle', "rb") as input_file:
    sleep_data = pickle.load(input_file)
    
 set1 = unfold_data(sleep_data['W'])  # seleccionar que par de fases de suenio se van a comparar
@@ -93,7 +93,7 @@ plt.plot(fpr,tpr) # plotear curva ROC
 
 
 # cargar matrices de correlacion
-with open(r'C:\Users\users\Documents\work\slides\curso_DC\data_propofol\propofol_data_1.pickle', "rb") as input_file:
+with open('../datasets/propofol_data.pickle', "rb") as input_file:
    sleep_data = pickle.load(input_file)
    
 set1 = unfold_data(sleep_data['W'])  
