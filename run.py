@@ -13,7 +13,8 @@ from training_module import train_set, eval_set
 
 # svc = Support Vector
 # nusvc = Nu-Support Vector
-# lsvc = Linear Support Vector
+# polysvc = Support Vector, Polinomial kernel
+# sigsvc = Support Vector, Sigmoid Kernel
 
 parser = argparse.ArgumentParser(description='Clasificador.')
 parser.add_argument('clasificador', metavar='C', type=str,

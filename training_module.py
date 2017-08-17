@@ -77,12 +77,25 @@ def train_set(clf_type,shuffle=False):
             clf = RandomForestClassifier(n_estimators=n_estimators, max_leaf_nodes=5)
         if clf_type == 'rf5oob':
             clf = RandomForestClassifier(n_estimators=n_estimators, max_leaf_nodes=5, oob_score=True)
+
         if clf_type == 'svc':
             clf = svm.SVC(probability=True)
         if clf_type == 'nusvc':
             clf = svm.NuSVC(nu=0.1,probability=True)
         if clf_type == 'polysvc':
             clf = svm.SVC(probability=True, kernel='poly')
+        if clf_type == 'sigsvc':
+            clf = svm.SVC(probability=True, kernel='sigmoid')
+        if clf_type == 'polysvc5':
+            clf = svm.SVC(probability=True, kernel='poly', degree=5)
+        if clf_type == 'polysvc2':
+            clf = svm.SVC(probability=True, kernel='poly', degree=2)
+        if clf_type == 'polysvc1':
+            clf = svm.SVC(probability=True, kernel='poly', degree=1)
+        if clf_type == 'polysvc4':
+            clf = svm.SVC(probability=True, kernel='poly', degree=4)
+        if clf_type == 'polysvc6':
+            clf = svm.SVC(probability=True, kernel='poly', degree=6)
 
         clf = clf.fit(X_train, y_train)
         preds = clf.predict(X_test)
