@@ -5,16 +5,6 @@ from training_module import train_set, eval_set
 # python run.py clasificador
 # Ejemplo: python run.py rf2
 
-# Clasificadores:
-
-# rf2 : Random forest con max leaf nodes = 2
-# rf5 : Random forest con max leaf nodes = 5
-# rf5oob : Random forest con max leaf nodes = 5 y oob_score=True
-
-# svc = Support Vector
-# nusvc = Nu-Support Vector
-# polysvc = Support Vector, Polinomial kernel
-# sigsvc = Support Vector, Sigmoid Kernel
 
 parser = argparse.ArgumentParser(description='Clasificador.')
 parser.add_argument('clasificador', metavar='C', type=str,
