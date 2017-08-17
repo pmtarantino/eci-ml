@@ -17,17 +17,17 @@ Para ejecutar, simplemente correr
 donde los clasificadores disponibles son:
 
 De Random forest:
-# rf2 : Random forest con max leaf nodes = 2
-# rf5 : Random forest con max leaf nodes = 5
-# rf5oob : Random forest con max leaf nodes = 5 y oob_score=True
+- rf2 : Random forest con max leaf nodes = 2
+- rf5 : Random forest con max leaf nodes = 5
+- rf5oob : Random forest con max leaf nodes = 5 y oob_score=True
 
 Support vector machine:
-# svc = Support Vector Machine clasico, con un kernel de base radial (default)
-# nusvc = Nu-Support Vector Machine, similar a svc pero con una cota de 0.1 en los errores de entrenamiento
-# polysvc = Support Vector, con kernel polinomial
-# sigsvc = Support Vector, con kernel Sigmoid 
+- svc = Support Vector Machine clasico, con un kernel de base radial (default)
+- nusvc = Nu-Support Vector Machine, similar a svc pero con una cota de 0.1 en los errores de entrenamiento
+- polysvc = Support Vector, con kernel polinomial
+- sigsvc = Support Vector, con kernel Sigmoid 
 
-El #polysvc usa un polinomio de grado 3 por default, para utilizar con otros grados de 2 a 6), se utiliza polysvc2, polysvc4, polysvc5 o polysvc6.
+El polysvc usa un polinomio de grado 3 por default, para utilizar con otros grados de 2 a 6), se utiliza polysvc2, polysvc4, polysvc5 o polysvc6.
 
 ## Resultados
 
